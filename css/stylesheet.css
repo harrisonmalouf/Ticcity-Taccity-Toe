@@ -1,0 +1,21 @@
+* {
+  outline: red solid 2px
+}
+
+body {
+  background-color: green;
+}
+
+.fieldTokens {
+  display: inline-block;
+  outline: black solid 5px;
+  margin: 5em 15%;
+}
+
+head footer {
+  margin: 5em ;
+}
+
+h1 h4 {
+  text-align: center;
+}
