@@ -1,5 +1,6 @@
 * {
   outline: red solid 2px
+
 }
 
 body {
@@ -8,9 +9,11 @@ body {
 
 .fieldTokens {
   display: inline-block;
+  box-sizing: border-box;
   outline: black solid 5px;
-  margin: 5em 13%;
+  margin: 8px 10%;
   padding: 2em
+
 }
 
 head footer {

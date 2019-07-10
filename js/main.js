@@ -13,28 +13,19 @@ const answer2 = []
 let click = 0
 
 $(".fieldTokens").on("click", function() {
-
-    // if ( click % 2 == 0) {
-    //   answer1.push(currentId);
-    //   console.log('answer1', answer1);
-    //   return true
-    // } else {
-    //   answer2.push(currentId);
-    //   console.log("answer2", answer2);
-    //   return false
-    // };
-    //   $(this).toggle('clicks', click+1);
     if ( click % 2 == 0) {
-    answer1.push($(this).attr("id"));
-    $(this).text('X');
-    console.log('answer1', answer1);
-    } else {
       answer1.push($(this).attr("id"));
-      $(this).text('O');
-      console.log("answer2", answer2);
-      findWinner(answer2);
-      }
-      click += 1;
+      $(this).text('X');
+      console.log('answer1', answer1);
+    } else {
+        answer2.push($(this).attr("id"));
+        $(this).text('O');
+        console.log("answer2", answer2);
+    }
+// else if(answer2.length => 3) {
+//     console.log("draw")
+//   }
+    click += 1 ;
 
      findWinner(answer1);
      findWinner(answer2);
@@ -52,10 +43,13 @@ const findWinner = function (player) {
         (player.includes("4") && player.includes("5") && player.includes("6")) ||
         (player.includes("7") && player.includes("8") && player.includes("9"))
       ) {
-    return true;
-  } else {
-    return false;
+    console.log("hello");
+  } else  {
+
   }
+  // else {
+    // return false;
+  // }
 };
 
 
