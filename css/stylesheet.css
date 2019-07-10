@@ -9,7 +9,8 @@ body {
 .fieldTokens {
   display: inline-block;
   outline: black solid 5px;
-  margin: 5em 15%;
+  margin: 5em 13%;
+  padding: 2em
 }
 
 head footer {
