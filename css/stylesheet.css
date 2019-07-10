@@ -1,19 +1,39 @@
+/* box-sizing: border-box;*/
+
 * {
   outline: red solid 2px
-
 }
 
 body {
   background-color: green;
+  margin: 0 auto;
+  text-align: center;
+  width: 700px;
+}
+
+#container {
+
 }
 
 .fieldTokens {
-  display: inline-block;
-  box-sizing: border-box;
+/*  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
   outline: black solid 5px;
-  margin: 8px 10%;
-  padding: 2em
-
+  margin: 10px ;
+  line-height: 10em;
+  height: 10em;
+  width: 10em; */
+  height: 150px;
+  width: 150px;
+  background: #f0e9e1;
+  display: inline-block;
+  margin-top: 5px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 60px;
+  line-height: 150px;
+  border-radius: 10px;
 }
 
 head footer {
@@ -21,5 +41,6 @@ head footer {
 }
 
 h1 h4 {
+  margin: 0 auto;
   text-align: center;
 }

@@ -5,30 +5,59 @@ $(document).ready(function (){
 
 
 // this will be the empty array which'll push all of our choices into from a player1
-const answer1 = []
+const player1 = [];
 
 // we'll push player2s' answer in here
-const answer2 = []
+const player2 = [];
 
-let click = 0
+let results;
+
+let click = 0;
 
 $(".fieldTokens").on("click", function() {
     if ( click % 2 == 0) {
-      answer1.push($(this).attr("id"));
+      player1.push($(this).attr("id"));
       $(this).text('X');
-      console.log('answer1', answer1);
+      $(this).off("click");
+      console.log('answer1', player1);
     } else {
-        answer2.push($(this).attr("id"));
+        player2.push($(this).attr("id"));
         $(this).text('O');
-        console.log("answer2", answer2);
+        $(this).off("click");
+        console.log("answer2", player2);
     }
 // else if(answer2.length => 3) {
 //     console.log("draw")
 //   }
     click += 1 ;
 
-     findWinner(answer1);
-     findWinner(answer2);
+     const x = findWinner(player1);
+     const o =  findWinner(player2);
+// the seperate if statements allow us to break down the statements insteading of using else if or else.
+if ( x === true ) {
+  console.log("X wins");
+  results = "X wins";
+  $('h3').text(`${results}`);
+
+}
+
+if ( o === true) {
+    console.log("O wins");
+    results = "O wins"
+    $('h3').text(`${results}`);
+
+}
+
+// if inside an if is a nicer way of saying &&
+if (player1.length + player2.length === 9) {
+  if (o != true && x != true) {
+      console.log(" Draw!")
+      results = "Draw!"
+      $('h3').text(`${results}`);
+
+  }
+}
+
  });
 
 // this is the if statement we use to make sure we have a answer or not.
@@ -43,15 +72,23 @@ const findWinner = function (player) {
         (player.includes("4") && player.includes("5") && player.includes("6")) ||
         (player.includes("7") && player.includes("8") && player.includes("9"))
       ) {
-    console.log("hello");
-  } else  {
-
+        return true;
+    //console.log("hello");
+    //window.location.reload().delay(1000);
+  //}
+  //else if(answer1.length + answer2.length === 9)
+  //{
+    //window.location.reload().delay(1000);
+  } else {
+    return false;
   }
   // else {
     // return false;
   // }
 };
 
-
+$("#reset").on("click", function (){
+  window.location.reload();
+})
 
 });
