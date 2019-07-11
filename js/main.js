@@ -38,27 +38,21 @@ if ( x === true ) {
   console.log("X wins");
   results = "X wins";
   $('h3').text(`${results}`);
-
 }
-
 if ( o === true) {
     console.log("O wins");
     results = "O wins"
     $('h3').text(`${results}`);
-
 }
-
-// if inside an if is a nicer way of saying &&
 if (player1.length + player2.length === 9) {
-  if (o != true && x != true) {
+    if (o != true && x != true) {
       console.log(" Draw!")
       results = "Draw!"
       $('h3').text(`${results}`);
-
+// if inside an if is a nicer way of saying &&
+    }
   }
-}
-
- });
+});
 
 // this is the if statement we use to make sure we have a answer or not.
 
@@ -86,9 +80,10 @@ const findWinner = function (player) {
     // return false;
   // }
 };
-
 $("#reset").on("click", function (){
   window.location.reload();
+
 })
+
 
 });
