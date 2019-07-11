@@ -1,46 +1,80 @@
 /* box-sizing: border-box;*/
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap');
 
 * {
   outline: red solid 2px
 }
 
 body {
-  background-color: green;
+  background-color: red;
   margin: 0 auto;
   text-align: center;
   width: 700px;
 }
 
-#container {
+#reset {
+display: inline-block;
+margin-top: 35px;
+background-color: yellow;
+font-size: 3em;
+color: red;
+border-radius: 10px;
+background-image: linear-gradient(rgb(45, 185, 45), rgb(25, 103, 25));
+text-shadow: 0px 0px 23px purple;
+font-family: 'Source Code Pro', monospace;
+}
 
+#container {
+background-color: green;
 }
 
 .fieldTokens {
-/*  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  outline: black solid 5px;
-  margin: 10px ;
-  line-height: 10em;
-  height: 10em;
-  width: 10em; */
   height: 150px;
   width: 150px;
-  background: #f0e9e1;
+  background-image: linear-gradient(rgb(25, 103, 25), rgb(45, 185, 45));
   display: inline-block;
-  margin-top: 5px;
+  margin: 13px;
   text-align: center;
   vertical-align: middle;
-  font-size: 60px;
+  font-size: 100px;
   line-height: 150px;
-  border-radius: 10px;
+  border-radius: 7px;
+  text-shadow: 0px 0px 23px purple;
+  box-shadow: 0px 0px 23px purple;
 }
 
-head footer {
-  margin: 5em ;
+
+section {
+  margin: 0 auto;
+  background-color: green;
+  border: 1em green solid;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+footer {
+    background-color: green;
+    margin: 0 auto
+    border: 1em green solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 h1 h4 {
-  margin: 0 auto;
   text-align: center;
+}
+
+h4 {
+  margin-top: 0;
+  padding: 1em 0;
+  font-size: 1em;
+}
+
+h1 {
+  background-color: green;
+  font-family: 'Libre Baskerville', serif;
+  margin: 0 auto;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
