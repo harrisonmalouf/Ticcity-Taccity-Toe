@@ -2,29 +2,20 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap');
 
-* {
-  outline: red solid 2px
-}
 
 body {
-  background-color: red;
+  background-color: rgb(25, 103, 25);
   margin: 0 auto;
   text-align: center;
   width: 700px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/nature.jpg");
 }
 
 #reset {
-/*display: inline-block;
-margin-top: 35px;
-background-color: yellow;
-font-size: 3em;
-color: red;
-border-radius: 10px;
-background-image: linear-gradient(rgb(45, 185, 45), rgb(25, 103, 25));
-text-shadow: 0px 0px 23px purple;
-font-family: 'Source Code Pro', monospace;*/
-width: 140px;
-height: 45px;
+width: 144px;
+height: 46px;
 font-family: 'Source Code Pro', monospace;
 font-size: 15px;
 margin-top: 35px;
@@ -45,14 +36,10 @@ transition: all 0.3s ease 0s;
   transform: translateY(-7px);
 }
 
-#container {
-background-color: green;
-}
-
 .fieldTokens {
   height: 150px;
   width: 150px;
-  background-image: linear-gradient(rgb(25, 103, 25), rgb(45, 185, 45));
+  background-image: rgb(45, 185, 45,   ));
   display: inline-block;
   margin: 13px;
   text-align: center;
@@ -62,28 +49,36 @@ background-color: green;
   border-radius: 7px;
   text-shadow: 0px 0px 23px purple;
   box-shadow: 0px 0px 23px purple;
+  transition: all 0.3s ease 0s;
 }
 
+.fieldTokens:active {
+  background-color: #240034;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  transform: translateY(-7px);
+  color: yellow;
+}
 
 section {
   margin: 0 auto;
-  background-color: green;
-  border: 1em green solid;
+  background-color: rgb(25, 103, 25, .6);
+  border: 1em rgb(25, 103, 25, .6) solid;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
 footer {
-    background-color: green;
+    background-color: rgb(25, 103, 25, .6);
     margin: 0 auto
     border: 1em green solid;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-h1 h4 {
+h1 h4 h3 {
+  font-family: 'Libre Baskerville', serif;
   text-align: center;
-  letter-spacing: 4px;
+  letter-spacing: 10px;
 }
 
 h4 {
@@ -92,10 +87,24 @@ h4 {
   font-size: 1em;
 }
 
+h3 {
+  height: 1em;
+  width: 200em;
+  letter-spacing: 7px;
+  text-align: center;
+  display: inline;
+  font-size: 2em;
+  background: rgb(25, 103, 25, .6);
+  border-radius: 1em;
+  text-shadow: 0px 0px 15px purple
+}
+
 h1 {
-  background-color: green;
-  font-family: 'Libre Baskerville', serif;
+  background-color: rgb(25, 103, 25, .6);
+  font-size: 5em ;
   margin: 0 auto;
+  letter-spacing: 10px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  text-shadow: 0px 0px 15px purple;
 }

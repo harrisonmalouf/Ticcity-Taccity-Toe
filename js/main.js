@@ -35,13 +35,13 @@ $(".fieldTokens").on("click", function() {
      const o =  findWinner(player2);
 // the seperate if statements allow us to break down the statements insteading of using else if or else.
 if ( x === true ) {
-  console.log("X wins");
-  results = "X wins";
+  console.log("X Wins!");
+  results = "X Wins!";
   $('h3').text(`${results}`);
 }
 if ( o === true) {
-    console.log("O wins");
-    results = "O wins"
+    console.log("O Wins!");
+    results = "O Wins!"
     $('h3').text(`${results}`);
 }
 if (player1.length + player2.length === 9) {
