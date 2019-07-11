@@ -1,8 +1,8 @@
-#Ticcity Taccity Toe
+# Ticcity Taccity Toe
 
 This is a fun game that I've i've created through HTML, CSS and Javascript.
 
-###Bugs
+### Bugs
 
 There are a few minor bugs that are still lurking around.
 
@@ -12,11 +12,11 @@ There are a few minor bugs that are still lurking around.
 
 - The winner changes if you continue to play. An example would be if player X wins, then if O continues and reaches a winning condition
 
-###Purpose
+### Purpose
 
 This Tic Tac Toe game was created for the sole purpose for my courses project. While making this game its been a pleasure learning more about HTML, CSS and Javascript. This website has been built from scratch.
 
-###Future
+### Future
 
 - I'd love to make stemming from this project a tic tac toe with rock paper scissors elements. I would of loved to do it for this project, however I didn't have enough time.
 
