@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap');
 
+* {
+  outline-color: red;
+}
 
 body {
   background-color: rgb(25, 103, 25);
@@ -88,15 +91,13 @@ h4 {
 }
 
 h3 {
-  height: 1em;
-  width: 200em;
+  color: #DAA520;
   letter-spacing: 7px;
   text-align: center;
-  display: inline;
   font-size: 2em;
   background: rgb(25, 103, 25, .6);
   border-radius: 1em;
-  text-shadow: 0px 0px 15px purple
+  text-shadow: 0px 0px 15px purple;
 }
 
 h1 {
