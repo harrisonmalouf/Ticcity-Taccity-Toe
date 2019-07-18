@@ -1,7 +1,6 @@
 console.log("run");
 
 $(document).ready(function (){
-// I'll just get the click function to push the answers into player 1s array for now.
 
 
 // this will be the empty array which'll push all of our choices into from a player1
@@ -67,12 +66,6 @@ const findWinner = function (player) {
         (player.includes("7") && player.includes("8") && player.includes("9"))
       ) {
         return true;
-    //console.log("hello");
-    //window.location.reload().delay(1000);
-  //}
-  //else if(answer1.length + answer2.length === 9)
-  //{
-    //window.location.reload().delay(1000);
   } else {
     return false;
   }

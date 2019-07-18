@@ -2,6 +2,8 @@
 
 This is a fun game that I've i've created through HTML, CSS and Javascript.
 
+### [Demo link](https://harrisonmalouf.github.io/Ticcity-Taccity-Toe/)
+
 ### Bugs
 
 There are a few minor bugs that are still lurking around.
