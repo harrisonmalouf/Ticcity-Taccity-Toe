@@ -2,6 +2,8 @@
 
 This is a fun game that I've i've created through HTML, CSS and Javascript.
 
+![Introduction image to my tic tac toe](/images/tictactoe.jpg)
+
 ### [Demo link](https://harrisonmalouf.github.io/Ticcity-Taccity-Toe/)
 
 ### Purpose
@@ -10,9 +12,11 @@ This Tic Tac Toe game was created for the sole purpose for my courses project. W
 
 ### My Experience
 
-![A image of my logic board](/images/logicboard.png)
+![A image of my logic board code](/images/logicboard.png)
 
 During the process of building this project there was a lot of concepts I needed to wrap my head around, I felt that the logic board was one of the more intersting parts. Understanding the art of if statements and writing code that I could understand as well as others is something that if felt passionate about and made a point of doing so during this project. At this time pseudo code was one of the most important tools for me as it helped me break to concepts of each individual line that was written for present and for future.
+
+![Highlight from my CSS code](/images/css.png)
 
 My personal highlight was working on the CSS, this was the first time I'd really let loose on trying to make something standout during the course and had a theme in mind. It was important to me not to over do it with animations, it was an exciting time during this part of my course as I'd just been inundated with CSS libraries and inspiring talks about innovative ways to apply CSS in ones project.
 
